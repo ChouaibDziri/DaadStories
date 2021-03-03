@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/cardview_light_background">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="70sp"
+        android:background="#E1BEE7"
+        android:text="قصص ض"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        tools:context=".MainActivity">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:orientation="horizontal"
+
+                tools:context=".MainActivity">
+
+                <Button
+                    android:id="@+id/arabic"
+                    android:layout_width="140dp"
+                    android:layout_height="69dp"
+                    android:background="#F0F4C3"
+                    android:text="العربية"
+                    android:textStyle="bold"
+                    android:textSize="26sp"
+                    android:onClick="lanshArabicActivity"
+                    tools:ignore="OnClick" />
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="71dp"
+                    android:src="@drawable/arabic" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                tools:context=".MainActivity">
+
+                <Button
+                    android:id="@+id/english"
+                    android:layout_width="140dp"
+                    android:layout_height="69dp"
+                    android:background="#DCEDC8"
+                    android:text="English"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:onClick="lanshEnglishActivity"/>
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="71dp"
+                    android:src="@drawable/english" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                tools:context=".MainActivity">
+
+                <Button
+                    android:id="@+id/deutsch"
+                    android:layout_width="140dp"
+                    android:layout_height="69dp"
+                    android:background="#C8E6C9"
+                    android:text="Deutsch"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:onClick="lanshDeutshActivity"/>
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="71dp"
+                    android:src="@drawable/german" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
