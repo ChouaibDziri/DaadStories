@@ -1,6 +1,7 @@
-package android.exemple.com.daddstories_0;
+package android.exemple.com.daddstories_0.presentation.Deutch;
 
 import android.content.Context;
+import android.exemple.com.daddstories_0.R;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

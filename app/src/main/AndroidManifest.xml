@@ -10,18 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DADDStories_0">
         <activity
-            android:name=".DeutschActivity"
+            android:name=".presentation.Deutch.DeutschActivity"
             android:label="Geschichten auf Deutsch"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".presentation.MainActivity"></activity>
         <activity
-            android:name=".ArabicActivity"
+            android:name=".presentation.arabic.ArabicActivity"
             android:label="قصص بالعربية"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".presentation.MainActivity" />
         <activity
-            android:name=".EnglishActivity"
+            android:name=".presentation.English.EnglishActivity"
             android:label="English Stories"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity">
+            android:parentActivityName=".presentation.MainActivity" />
+        <activity android:name=".presentation.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
