@@ -1,8 +1,9 @@
-package android.exemple.com.daddstories_0;
+package android.exemple.com.daddstories_0.presentation.Deutch;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.exemple.com.daddstories_0.R;
 import android.os.Bundle;
 
 public class DeutschActivity extends AppCompatActivity {

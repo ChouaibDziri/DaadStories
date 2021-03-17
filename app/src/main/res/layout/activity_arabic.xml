@@ -4,11 +4,121 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ArabicActivity">
-<androidx.viewpager.widget.ViewPager
+    android:orientation="vertical"
+    tools:context=".presentation.arabic.ArabicActivity">
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+    <com.google.android.material.chip.ChipGroup
+            android:id="@+id/arabic_categoryList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleLine="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/arabic_allCat_chip"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الكل"
+                app:chipIcon="@drawable/german"
+                android:textColor="@color/black" />
+
+                <com.google.android.material.chip.Chip
+                android:id="@+id/arabic_talk_chip"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="حكايات وحوار"
+                app:chipIcon="@drawable/german"
+                android:textColor="@color/black" />
+
+                <com.google.android.material.chip.Chip
+                android:id="@+id/arabic_science_chip"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="علوم"
+                app:chipIcon="@drawable/german"
+                android:textColor="@color/black" />
+
+                <com.google.android.material.chip.Chip
+                android:id="@+id/arabic_animals_chip"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="كائنات حيه"
+                app:chipIcon="@drawable/german"
+                android:textColor="@color/black" />
+
+                <com.google.android.material.chip.Chip
+                android:id="@+id/arabic_imagination_chip"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="خيال وإبداع"
+                app:chipIcon="@drawable/german"
+                android:textColor="@color/black" />
+
+                <com.google.android.material.chip.Chip
+                android:id="@+id/arabic_play_chip"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="لعب"
+                app:chipIcon="@drawable/german"
+                android:textColor="@color/black" />
+
+                <com.google.android.material.chip.Chip
+                android:id="@+id/arabic_adventures_chip"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مغامرات"
+                app:chipIcon="@drawable/german"
+                android:textColor="@color/black" />
+
+                <com.google.android.material.chip.Chip
+                android:id="@+id/arabic_values_chip"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="سلوك وقيم"
+                app:chipIcon="@drawable/german"
+                android:textColor="@color/black" />
+
+                <com.google.android.material.chip.Chip
+                android:id="@+id/arabic_reading_chip"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="قراءه وتعلم"
+                app:chipIcon="@drawable/german"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/arabic_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/story_item"
+        />
+
+<!--<androidx.viewpager.widget.ViewPager
     android:id="@+id/araic_view_pager"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
     android:background="@color/cardview_light_background"
     />
+    -->
 </LinearLayout>

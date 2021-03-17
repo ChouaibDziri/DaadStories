@@ -1,8 +1,12 @@
-package android.exemple.com.daddstories_0;
+package android.exemple.com.daddstories_0.presentation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.exemple.com.daddstories_0.R;
+import android.exemple.com.daddstories_0.presentation.Deutch.DeutschActivity;
+import android.exemple.com.daddstories_0.presentation.English.EnglishActivity;
+import android.exemple.com.daddstories_0.presentation.arabic.ArabicActivity;
 import android.os.Bundle;
 import android.view.View;
 

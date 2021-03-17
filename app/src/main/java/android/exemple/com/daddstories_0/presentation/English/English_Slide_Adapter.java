@@ -1,6 +1,7 @@
-package android.exemple.com.daddstories_0;
+package android.exemple.com.daddstories_0.presentation.English;
 
 import android.content.Context;
+import android.exemple.com.daddstories_0.R;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
-public class Arabic_Slide_Adapter extends PagerAdapter {
+public class English_Slide_Adapter extends PagerAdapter {
     Context context;
     LayoutInflater inflater;
     //List of images
@@ -34,8 +35,6 @@ public class Arabic_Slide_Adapter extends PagerAdapter {
             R.drawable.image_16,
             R.drawable.image_17,
             R.drawable.image_18,
-            R.drawable.image_19,
-            R.drawable.image_20,
             R.drawable.image_21,
             R.drawable.image_22,
             R.drawable.image_23,
@@ -48,40 +47,37 @@ public class Arabic_Slide_Adapter extends PagerAdapter {
             R.drawable.image_30
     };
     //List of Titles
-    public String[] Arabic_list_titles = {
-            "قطة في الأدغال",
-            "كرتي الحمراء",
-            "مغامرة فاكهة المانجو",
-            "طبيب القطن",
-            "مدينة الحكايات",
-            "وقت الحمام لسامي وهاني",
-            "كل شيء يبدو جديدا",
-            "الخلايا",
-            " عن السيرة الذاتية لزانيلي سيتو",
-            "ألوان قوس قزح السبعة",
-            "أين لولو؟",
-            "نجم البحر",
-            "البطريق",
-            "يوميات فأر مسكين",
-            "حكاية قطة لطيفة... ولكن مذنبة",
-            "لارا الخنفساء الصفراء",
-            "تجارب آنا الرائعة مع الطقس",
-            "هل من أحد يشبهني",
-            "الأسد الصغير",
-            "دوار الشمس",
-            "الفراشات",
-            "عندما أكبر",
-            "ماذا لو؟",
-            "لا",
-            "أنا سأساعد",
-            "غداء سميرة الفظيع",
-            "ماذا سأرتدي اليوم",
-            "الغناء تحت المطر",
-            "أغنية زينة",
-            "البحث عن روح الربيع"
+    public String[] English_list_titles = {
+            "The cat in the ghat adventure",
+            "Red ball",
+            "Mango",
+            "The cottonwool doctor",
+            "City of stories",
+            "bath time for chunnu and munnu childrens picture book",
+            "Everything Looks New",
+            "Cells : Kids Stories",
+            "Zanele situ my story",
+            "Colours of a rainbow African Storybook",
+            "Where-is-lulu?",
+            "Sea Stars",
+            "Penguins",
+            "A House for a Mouse",
+            "Its all the Cats Fault",
+            "Lara the yellow ladybird",
+            "Anna's extraordinary experiments with weather",
+            "Is There Anyone Like Me",
+            "Butterflies",
+            "When I Grow Up",
+            "What if ?",
+            "NO !",
+            "I Can help",
+            "Samira's Awful Lunch",
+            "What Shall I Wear Today ?",
+            "Singing in the Rain",
+            "Katiiti'-'s song",
+            "Searching for the Spirit of Spring"
     };
-    // List of description
-    public String[] Arabic_list_descriptions = {
+    public String[] English_list_descriptions = {
             "Description 1",
             "Description 2",
             "Description 3",
@@ -114,13 +110,13 @@ public class Arabic_Slide_Adapter extends PagerAdapter {
             "Description 30"
     };
 
-    public Arabic_Slide_Adapter(Context context) {
-        this.context=context;
+    public English_Slide_Adapter(Context context) {
+        this.context = context;
     }
 
     @Override
     public int getCount() {
-        return Arabic_list_titles.length;
+        return English_list_titles.length;
     }
 
     @Override
@@ -132,14 +128,14 @@ public class Arabic_Slide_Adapter extends PagerAdapter {
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
         inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.arabic_slide, container, false);
-        LinearLayout layoutslide = (LinearLayout) view.findViewById(R.id.arabic_slide_LinearLayout);
-        ImageView imgslide = (ImageView) view.findViewById(R.id.arabic_slideimg);
-        TextView titslide = (TextView) view.findViewById(R.id.arabic_slidetext);
-        TextView descripslide = (TextView) view.findViewById(R.id.arabic_slidedescription);
+        View view = inflater.inflate(R.layout.english_slide, container, false);
+        LinearLayout layoutslide = (LinearLayout) view.findViewById(R.id.english_slide_LinearLayout);
+        ImageView imgslide = (ImageView) view.findViewById(R.id.english_slideimg);
+        TextView titslide = (TextView) view.findViewById(R.id.english_slidetext);
+        TextView descripslide = (TextView) view.findViewById(R.id.english_slidedescription);
         imgslide.setImageResource(list_images[position]);
-        titslide.setText(Arabic_list_titles[position]);
-        descripslide.setText(Arabic_list_descriptions[position]);
+        titslide.setText(English_list_titles[position]);
+        descripslide.setText(English_list_descriptions[position]);
         container.addView(view);
         return view;
     }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EnglishActivity">
+    tools:context=".presentation.English.EnglishActivity">
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/english_view_pager"
         android:layout_width="wrap_content"
